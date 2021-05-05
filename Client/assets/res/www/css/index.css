@@ -136,27 +136,29 @@ h1 a { font-size: 30px; color: #fff;}
 
 
 /**/
-.kakaotalkConversation { padding: 100px 0; margin-top: 100px; background: #C0D1DB;}
-.kakaotalkConversation > div { margin: 0 auto; width: 900px;}
-.kakaotalkConversation > div > div > div { padding-top:8px;}
-.kakaotalkConversation h2 { margin-bottom: 27px;}
-.kakaotalkConversation p { display: inline; padding: 14px 20px; margin-top: 30px; line-height:50px; border-radius: 5px; font-size: 17px;}
+div.bu_box { float: left; width: 30%; height: 100px;}
+div.dialog { float: left; width: 70%;}
 
-.opponent > div { position: relative;}
-.opponent > div > div:first-child { padding-left:95px;}
-.opponent > div > div + div { position: absolute; left: 0; top: 0;}
-.opponent,
-.myNameKKE { margin: 50px 0; clear: both;}
-.myNameKKE { padding: 10px 0 10px 700px; width: 300px;}
-.myNameKKE > div { float: right;}
-.opponent p::after { content: }
-.opponent p { background:#fff;}
-.emoticon { margin-bottom: 50px;}
-.myNameKKE p { background:#FDEC4F;}
-.opponentImage { overflow:hidden; width:70px; height:70px; border:1px solid #d4d8d8; border-radius:60px; background: yellow;}
-.opponentImage img { width: 100%;}
-.youho a { color: blue;}
-.youho a:hover { text-decoration: underline;}
+.opponent::after,
+.kke::after { content: ''; display : block; clear : both;}
+
+.kakaotalkConversation { padding: 100px 0; box-sizing: border-box; margin-top: 100px; background: #C0D1DB;}
+.kakaotalkConversation > div { margin: 0 auto; width: 900px;}
+.kakaotalkConversation > div > div { margin: 50px 0; width: 100%;}
+.kakaotalkConversation p { display: inline-block; padding: 10px 20px 10px 20px; box-sizing: border-box; border-radius: 5px; font-size: 17px; line-height:34px;}
+
+.opponent h2 { margin-bottom: 15px;}
+.opponent .dialog > div { position: relative;}
+.opponent .dialog > div > div:first-child { padding: 0 0 0 95px; box-sizing: border-box;}
+.opponent .dialog > div > div + div { position: absolute; left: 0; top: 3px;}
+.opponent p { background: #fff;}
+.opponent_image { overflow:hidden; width:70px; height:70px; border:1px solid #fff; border-radius: 60px; background: #fff;}
+.opponent_image img { width: 100%;}
+
+.kke .dialog > div { text-align: right;}
+.kke img.emoticon { margin-bottom: 50px;}
+.kke p { background: #FDEC4F; text-align: left;}
+
 
 /*3*/
 .contents_portfolio,
