@@ -140,7 +140,7 @@ h1 a { font-size: 30px; color: #fff;}
 .kakaotalkConversation > div { margin: 0 auto; width: 900px;}
 .kakaotalkConversation > div > div > div { padding-top:8px;}
 .kakaotalkConversation h2 { margin-bottom: 27px;}
-.kakaotalkConversation p { display: inline; padding: 14px 20px; margin-top: 30px; border-radius: 5px; font-size: 17px;}
+.kakaotalkConversation p { display: inline; padding: 14px 20px; margin-top: 30px; line-height:50px; border-radius: 5px; font-size: 17px;}
 
 .opponent > div { position: relative;}
 .opponent > div > div:first-child { padding-left:95px;}
