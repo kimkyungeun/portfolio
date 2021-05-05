@@ -1,1 +1,178 @@
+@charset "utf-8";
+/* CSS Document */
 
+/* 속성 제공 순서
+overflow
+display
+float
+position
+left,right,top,bottom
+padding
+margin
+width
+height
+background
+border
+font
+etc
+*/
+
+/*header*/
+header { height: 780px; background: #1D1464;}
+h1 { padding: 200px 0 0 0; text-align: center;}
+h1 a { font-size: 30px; color: #fff;}
+.listMenu { padding: 50px 0 0 0; text-align: center;}
+.listMenu li{ display: inline-block; padding: 0 10px;}
+.listMenu li a { font-size: 25px; color: #1D1464;}
+.listMenu li a:hover { font-weight: bold;}
+.typingMente { margin: 100px 0 0 0 ; text-align: center;}
+.mente { font-size:14px; color: #fff; text-shadow:0 0 5px #000;}
+
+/*main*/
+
+/*kim_kyungeun_portfolio_information*/
+.contents_information section > div { height:60px; background:#f5f7f8; border-bottom:1px solid #d3d6db;}
+.contents_information section > div h2 { padding:0 0 0 50px; background:url(../images/buico/ico_profile.png) no-repeat 19px 50%; font-size:20px; line-height:60px;}
+.tabs { background:#fff;}
+.tabs > ul { float:left; padding:30px 0 0 0; width:25%;}
+.tabs > ul li a { display:block; padding:0 0 0 20px; margin:0 0 0 3px; height:40px; font-size:13px; color:#737373; line-height:40px;}
+.tabs > ul li a:hover { color:#000;}
+.tabs > ul li.ui-state-active a { margin:0 0 0 0; border-left:3px solid #3b5998; font-weight:bold; color:#000;}
+.tabs > div { float:left; padding:30px 20px 30px 20px; width:75%; min-height:380px; border-left:1px solid #d3d6db; box-sizing:border-box;}
+.information_index { width:100%;}
+.information_index > div:first-child { float:left; width:70%;}
+.information_index > div:first-child div { padding:20px 0 40px 50px; border-top:1px solid #d3d6db;}
+.information_index > div:first-child div p { padding:5px 0 0 0;}
+.information_index > div:first-child div p:first-child { padding:0 0 0 0;}
+.information_index > div:first-child div:first-child { padding:0 0 40px 50px; background:url(../images/buico/ico_school.png) no-repeat; border:none;}
+.information_index > div:first-child div:last-child { background:url(../images/buico/ico_abode.png) no-repeat 0 20px;}
+.information_index > div + div { float:left; padding:0 0 0 20px; width:30%; box-sizing:border-box;}
+.information_index > div + div img { padding:0 10px 0 0;}
+.information_index > div + div p { display:inline-block; padding:20px 0 0 0;}
+.information_index > div + div div:first-child img { padding:0 12px 0 2px;}
+.information_index > div + div div:first-child p { padding:0 0 0 0;}
+.information_career h3,
+.information_contact h3,
+.information_introduction h3 { padding:0 0 10px 0; border-bottom:1px solid #d3d6db;}
+.table01 { margin:20px 0 50px 0; text-align:center;}
+.table01 thead { background:#f2f6f9;}
+.table01 thead th { padding:10px 0 10px 0; border-left:1px solid #d3d6db; font-size:13px; color:#737373;}
+.table01 thead th:first-child { border:none;}
+.table01 tbody tr { border-top:1px solid #d3d6db;}
+.table01 tbody td { padding:10px 10px 10px 10px; border-left:1px solid #d3d6db; font-size:12px; color:#000;}
+.table01 tbody td:first-child { border:none;}
+.table01 tbody .period { text-indent:17px;}
+.table01 tbody .company { text-align:left; line-height:20px;}
+.table01 tbody .company span { margin:0 4px 0 0; background:#f0f5f9; border:1px solid #c1d2e6; font-size:11px; color:#95adc5;}
+.information_contact div.kimkyungeun { padding:20px 0 0 0;}
+.information_contact div.kimkyungeun table { float:left; width:80%;}
+.information_contact div.kimkyungeun img { float:left; margin:0 0 0 20px; border:1px solid #d3d6db;}
+.information_contact .award { clear:both;}
+.table02 { margin:0 0 50px 0;}
+.table02 tbody tr { height:30px; border-top:1px solid #d3d6db; border-bottom:1px solid #d3d6db;}
+.table02 tbody th { background:#f2f6f9; border-right:1px solid #d3d6db;}
+.table02 tbody td { padding:0 0 0 10px;}
+/*kim_kyungeun_portfolio_portfolio*/
+.contents_portfolio section > div { background:#f5f7f8; border-bottom:1px solid #d3d6db;}
+.contents_portfolio section > div h2 { padding:0 0 0 50px; background:url(../images/buico/ico_portfolio.png) no-repeat 19px 50%; font-size:20px; line-height:60px;}
+.portfolio_list { height:50px; line-height:50px; background:#f5f7f8; border-bottom:1px solid #d3d6db;}
+.portfolio_list > a { position:relative; padding:0 0 10px 30px; font-size:13px; color:#737373;}
+.portfolio_list a:hover { color:#000;}
+.is-checked:after { content:""; display:block; position:absolute; left:50%; bottom:-12px; margin:0 0 0 10px; width:10px; height:10px; background:#fff; border-top:1px solid #d3d6db; border-left:1px solid #d3d6db; transform:rotate(45deg);}
+.is-checked { font-weight:bold; color:#000;}
+.portfolio_text:after {content:'';display:block;clear:both;}
+.portfolio_text { position:relative; padding:20px 30px 20px 30px; background:#fff; box-sizing:border-box;}
+.portfolio_text > div { clear:both;}
+.container { float:left; position:relative; width:210px; height:300px; margin:5px 5px 10px 5px; border:1px solid #d3d6db;}
+.container a { position:absolute; top:0; width:100%; height:200px;}
+.container a.posco { background:url(../images/txt/@posco_small.jpg) 50% 50% no-repeat; background-size:130%;}
+.container a.tomntoms { background:url(../images/txt/@tomntoms_small.jpg) 50% 50% no-repeat; background-size:130%;}
+.container a.keb_bank { background:url(../images/txt/@keb_bank_small.jpg) 50% 0 no-repeat; background-size:130%;}
+.container a.kb_bank { background:url(../images/txt/@kb_bank_small.jpg) 50% 0 no-repeat; background-size:130%;}
+.container a.goodchoice { background:url(../images/txt/@goodchoice_small.jpg) 50% 0 no-repeat; background-size:130%;}
+.container a.hanil { background:url(../images/txt/@hanil_small.jpg) 50% 50% no-repeat; background-size:130%;}
+.container a.airwindow { background:url(../images/txt/@airwindow_small.jpg) 50% 50% no-repeat; background-size:130%;}
+.container a.etc_book01 { background:url(../images/txt/@etc_book01_small.jpg) 50% 50% no-repeat; background-size:130%;}
+.container a.etc_book02 { background:url(../images/txt/@etc_book02_small.jpg) 50% 50% no-repeat; background-size:130%;}
+.container a.etc_book03 { background:url(../images/txt/@etc_book03_small.jpg) 50% 50% no-repeat; background-size:130%;}
+.container a.etc_ad01 { background:url(../images/txt/@etc_leaflet_small.jpg) 50% 50% no-repeat; background-size:110%;}
+.container a.etc_ad02 { background:url(../images/txt/@etc_gift_certificate_small.jpg) 50% 50% no-repeat; background-size:110%;}
+.container a.etc_ad03 { background:url(../images/txt/@etc_poster_small.jpg) 50% 50% no-repeat; background-size:100%;}
+.container a.etc_ad04 { background:url(../images/txt/@etc_brochure01_small.jpg) 50% 50% no-repeat; background-size:130%;}
+.container a.etc_ad05 { background:url(../images/txt/@etc_brochure02_small.jpg) 50% 50% no-repeat; background-size:130%;}
+.container a.etc_ad06 { background:url(../images/txt/@etc_banner01_small.jpg) 50% 50% no-repeat; background-size:100%;}
+.container a.etc_ad07 { background:url(../images/txt/@etc_banner02_small.jpg) 50% 50% no-repeat; background-size:100%;}
+.container a.etc_ad08 { background:url(../images/txt/@etc_placard_small.jpg) 50% 50% no-repeat; background-size:100%;}
+.container a.web:hover { background:url(../images/buico/ico_small_web.png) 50% 50% no-repeat #fff;}
+.container a.mobile:hover { background:url(../images/buico/ico_small_mobile.png) 50% 50% no-repeat #fff;}
+.container a.responsive_web:hover { background:url(../images/buico/ico_small_responsive_web.png) 50% 50% no-repeat #fff;}
+.container a.etc:hover { background:url(../images/buico/ico_small_photo.png) 50% 50% no-repeat #fff;}
+.container h3 { position:absolute; bottom:0; width:100%; height:100px; font-size:14px; color:#000; line-height:100px; text-align:center;}
+.alert { position:fixed; z-index:23; left:0; top:0; width:100%; height:100%; background:rgba(0, 0, 0, 0.7); text-align:center;}
+.alert > div { position:relative; padding:70px 50px 50px 50px; margin:100px auto; width:800px; background:#3b5998; box-sizing:border-box;}
+.alert > div div { padding:20px 10px 20px 10px; border:1px solid #fff; font-size:12px; color:#fff;}
+.alert > div p { padding:30px 0 0 0; font-size:13px; font-weight:bold; color:#fff;}
+.alert > div a { position:absolute; right:15px; top:15px;}
+
+
+
+
+
+
+
+/**/
+.profile { margin:0 auto; padding:80px 0 200px 0; width:1100px; height:100%; text-align:center; box-sizing:border-box;}
+.profile h2 { padding-bottom:50px; }
+.card { position:relative; margin:0 auto; width:700px; height:380px;}
+.card > div { position:absolute; left:0; top:0;  transition:all 1s;}
+.card:hover .card_mask { transform:rotateY(180deg); opacity:0; }
+.card:hover .card_01{ transform:rotateY(0); opacity:1;}
+.card .card_mask { width:700px; height:380px; background:url(../images/bg/@visual01.jpg) no-repeat 50% 20%; background-size: 100%; border-radius:10px; opacity:1;}
+.card .card_01{ padding:50px; width:700px; height:380px; background:#1D1464; border-radius:10px; text-align:center; box-shadow:#ccc 2px 2px 2px; transform:rotateY(180deg); opacity:0; box-sizing:border-box;}
+.card .card_01 .name { display:inline-block; margin:30px 0; width:300px; height:40px; line-height:40px; font-size:40px; color: #fff;}
+.card .card_01 > p + p { font-size:20px;}
+.card .card_01 > ul { position:absolute; right:50px; bottom:50px;}
+.card .card_01 > ul li { font-size:14px; line-height:20px; text-align:right; color: #fff;}
+
+
+/**/
+.kakaotalkConversation { padding: 100px 0; margin-top: 100px; background: #C0D1DB;}
+.kakaotalkConversation > div { margin: 0 auto; width: 900px;}
+.kakaotalkConversation > div > div > div { padding-top:8px;}
+.kakaotalkConversation h2 { margin-bottom: 27px;}
+.kakaotalkConversation p { display: inline; padding: 14px 20px; margin-top: 30px; border-radius: 5px; font-size: 17px;}
+
+.opponent > div { position: relative;}
+.opponent > div > div:first-child { padding-left:95px;}
+.opponent > div > div + div { position: absolute; left: 0; top: 0;}
+.opponent,
+.myNameKKE { margin: 50px 0; clear: both;}
+.myNameKKE { padding: 10px 0 10px 700px; width: 300px;}
+.myNameKKE > div { float: right;}
+.opponent p::after { content: }
+.opponent p { background:#fff;}
+.emoticon { margin-bottom: 50px;}
+.myNameKKE p { background:#FDEC4F;}
+.opponentImage { overflow:hidden; width:70px; height:70px; border:1px solid #d4d8d8; border-radius:60px; background: yellow;}
+.opponentImage img { width: 100%;}
+.youho a { color: blue;}
+.youho a:hover { text-decoration: underline;}
+
+/*3*/
+.contents_portfolio,
+.contents_story { margin:0 auto; width:960px;}
+.contents_information section,
+.contents_portfolio section { margin:15px 0 0 0; border:1px solid #d3d6db;}
+
+
+
+
+
+/*footer*/
+footer { padding: 40px 0; background: #1D1464; font-size: 14px; text-align: center; color: #fff;}
+
+/* &popup */
+.popupMessage { display:block; position:fixed; right:50px; bottom:62px; padding:30px 100px 30px; border:1px solid #ccc; border-radius:5px; box-shadow:0 5px 10px rgba(0,0,0,0.2); background:#fff; z-index:10;  box-sizing:border-box; }
+.message { margin-bottom:15px; font-size:17px; color:#999; text-align: center;}
+.btn_message { padding: 10px 20px; border-radius:4px; font-size: 15px;}
+.btn_message:hover { background: red; font-weight: bold; color: yellow;}
