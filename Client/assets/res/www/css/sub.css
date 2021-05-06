@@ -17,20 +17,7 @@ font
 etc
 */
 
-/*header*/
-header { height: 780px; background: #1D1464;}
-h1 { padding: 200px 0 0 0; text-align: center;}
-h1 a { font-size: 30px; color: #fff;}
-.listMenu { padding: 50px 0 0 0; text-align: center;}
-.listMenu li{ display: inline-block; padding: 0 10px;}
-.listMenu li a { font-size: 25px; color: #1D1464;}
-.listMenu li a:hover { font-weight: bold;}
-.typingMente { margin: 100px 0 0 0 ; text-align: center;}
-.mente { font-size:14px; color: #fff; text-shadow:0 0 5px #000;}
-
-/*main*/
-
-/*kim_kyungeun_portfolio_information*/
+/* kke_info.html */
 .contents_information section > div { height:60px; background:#f5f7f8; border-bottom:1px solid #d3d6db;}
 .contents_information section > div h2 { padding:0 0 0 50px; background:url(../images/buico/ico_profile.png) no-repeat 19px 50%; font-size:20px; line-height:60px;}
 .tabs { background:#fff;}
@@ -72,7 +59,12 @@ h1 a { font-size: 30px; color: #fff;}
 .table02 tbody tr { height:30px; border-top:1px solid #d3d6db; border-bottom:1px solid #d3d6db;}
 .table02 tbody th { background:#f2f6f9; border-right:1px solid #d3d6db;}
 .table02 tbody td { padding:0 0 0 10px;}
-/*kim_kyungeun_portfolio_portfolio*/
+
+/* kke_portfolio.html */
+.contents_portfolio,
+.contents_story { margin:0 auto; width:960px;}
+.contents_information section,
+.contents_portfolio section { margin:15px 0 0 0; border:1px solid #d3d6db;}
 .contents_portfolio section > div { background:#f5f7f8; border-bottom:1px solid #d3d6db;}
 .contents_portfolio section > div h2 { padding:0 0 0 50px; background:url(../images/buico/ico_portfolio.png) no-repeat 19px 50%; font-size:20px; line-height:60px;}
 .portfolio_list { height:50px; line-height:50px; background:#f5f7f8; border-bottom:1px solid #d3d6db;}
@@ -113,63 +105,6 @@ h1 a { font-size: 30px; color: #fff;}
 .alert > div div { padding:20px 10px 20px 10px; border:1px solid #fff; font-size:12px; color:#fff;}
 .alert > div p { padding:30px 0 0 0; font-size:13px; font-weight:bold; color:#fff;}
 .alert > div a { position:absolute; right:15px; top:15px;}
-
-
-
-
-
-
-
-/**/
-.profile { margin:0 auto; padding:80px 0 200px 0; width:1100px; height:100%; text-align:center; box-sizing:border-box;}
-.profile h2 { padding-bottom:50px; }
-.card { position:relative; margin:0 auto; width:700px; height:380px;}
-.card > div { position:absolute; left:0; top:0;  transition:all 1s;}
-.card:hover .card_mask { transform:rotateY(180deg); opacity:0; }
-.card:hover .card_01{ transform:rotateY(0); opacity:1;}
-.card .card_mask { width:700px; height:380px; background:url(../images/bg/@visual01.jpg) no-repeat 50% 20%; background-size: 100%; border-radius:10px; opacity:1;}
-.card .card_01{ padding:50px; width:700px; height:380px; background:#1D1464; border-radius:10px; text-align:center; box-shadow:#ccc 2px 2px 2px; transform:rotateY(180deg); opacity:0; box-sizing:border-box;}
-.card .card_01 .name { display:inline-block; margin:30px 0; width:300px; height:40px; line-height:40px; font-size:40px; color: #fff;}
-.card .card_01 > p + p { font-size:20px;}
-.card .card_01 > ul { position:absolute; right:50px; bottom:50px;}
-.card .card_01 > ul li { font-size:14px; line-height:20px; text-align:right; color: #fff;}
-
-
-/**/
-.kakaotalkConversation { padding: 100px 0; margin-top: 100px; background: #C0D1DB;}
-.kakaotalkConversation > div { margin: 0 auto; width: 900px;}
-.kakaotalkConversation > div > div > div { padding-top:8px;}
-.kakaotalkConversation h2 { margin-bottom: 27px;}
-.kakaotalkConversation p { display: inline; padding: 14px 20px; margin-top: 30px; border-radius: 5px; font-size: 17px;}
-
-.opponent > div { position: relative;}
-.opponent > div > div:first-child { padding-left:95px;}
-.opponent > div > div + div { position: absolute; left: 0; top: 0;}
-.opponent,
-.myNameKKE { margin: 50px 0; clear: both;}
-.myNameKKE { padding: 10px 0 10px 700px; width: 300px;}
-.myNameKKE > div { float: right;}
-.opponent p::after { content: }
-.opponent p { background:#fff;}
-.emoticon { margin-bottom: 50px;}
-.myNameKKE p { background:#FDEC4F;}
-.opponentImage { overflow:hidden; width:70px; height:70px; border:1px solid #d4d8d8; border-radius:60px; background: yellow;}
-.opponentImage img { width: 100%;}
-.youho a { color: blue;}
-.youho a:hover { text-decoration: underline;}
-
-/*3*/
-.contents_portfolio,
-.contents_story { margin:0 auto; width:960px;}
-.contents_information section,
-.contents_portfolio section { margin:15px 0 0 0; border:1px solid #d3d6db;}
-
-
-
-
-
-/*footer*/
-footer { padding: 40px 0; background: #1D1464; font-size: 14px; text-align: center; color: #fff;}
 
 /* &popup */
 .popupMessage { display:block; position:fixed; right:50px; bottom:62px; padding:30px 100px 30px; border:1px solid #ccc; border-radius:5px; box-shadow:0 5px 10px rgba(0,0,0,0.2); background:#fff; z-index:10;  box-sizing:border-box; }
