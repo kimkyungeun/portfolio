@@ -6,8 +6,8 @@
 /*********************************************************
  * <b>FUNCTION</b>
  * <p>
- * Function Name : frmfn_doScreen<br />
- * Description : 화면이동 처리<br />
+ * Function Name : frmfn_screen<br />
+ * Description : 화면 처리<br />
  * </p>
  *
  * <p>[수정이력]</p>
@@ -15,5 +15,5 @@
  * <li>2021.05.10 / 김경은(kimkyungeun@kakao.com) / 최초작성</li>
  * </ul>
  *********************************************************/
-function frmfn_doScreen(obj, screen) {
+function frmfn_screen(obj, path) {
 }
