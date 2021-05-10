@@ -1,94 +1,90 @@
+/**
+ * @file index.js
+ * <p>SCREEN_NAME: 메인</p>
+ */
+
+/**
+* 화면 로딩 완료시
+* 화면 로딩완료시 한번 호출된다.
+*/
+jQuery(document).ready(function($) {
+		jQuery(function(j$) {
+		// header fixed
+		var myHeader = j$('.header_bar, .header_bar h1');
+		myHeader.data( 'position', myHeader.position() );
+		j$(window).scroll(function(){
+			var hPos = myHeader.data('position'), scroll = getScroll();
+			/* null check */
+			if (hPos) {
+				if ( hPos.top < scroll.top ){
+					myHeader.addClass('fixed');
+				}
+				else {
+					myHeader.removeClass('fixed');
+				}
+			}
+		});
+
+		function getScroll () {
+			var b = document.body;
+			var e = document.documentElement;
+			return {
+				left: parseFloat( window.pageXOffset || b.scrollLeft || e.scrollLeft ),
+				top: parseFloat( window.pageYOffset || b.scrollTop || e.scrollTop )
+			};
+		}
+
+		// header fixed
+		});
+
+		function kkk(){
+			 $('.gnb > a').click(function() {
+				 $('.gnb > p').toggleClass('aaa');
+			 });
+
+		} kkk();
+
+};
+
 $(function() {
 	$('.btn_message').click(function() {
 		$('.popupMessage').hide();
 	});
 });
 
-
-
-
-// JavaScript Document
-$(document).ready(function () {
-
-	jQuery(function(j$) {
-	// header fixed
-	var myHeader = j$('.header_bar, .header_bar h1');
-	myHeader.data( 'position', myHeader.position() );
-	j$(window).scroll(function(){
-		var hPos = myHeader.data('position'), scroll = getScroll();
-		/* null check */
-		if (hPos) {
-			if ( hPos.top < scroll.top ){
-				myHeader.addClass('fixed');
-			}
-			else {
-				myHeader.removeClass('fixed');
-			}
-		}
-	});
-
-	function getScroll () {
-		var b = document.body;
-		var e = document.documentElement;
-		return {
-			left: parseFloat( window.pageXOffset || b.scrollLeft || e.scrollLeft ),
-			top: parseFloat( window.pageYOffset || b.scrollTop || e.scrollTop )
-		};
-	}
-	// header fixed
-	});
-
-	function kkk(){
-
-		 $('.gnb > a').click(function() {
-			 $('.gnb > p').toggleClass('aaa');
-		 });
-
-
-	}kkk();
-
+$(function() {
+	$('.tabs').tabs();
 });
 
 $(function() {
-
-	$('.tabs').tabs();
-
+	$('.gnb a.ico_name_tag').click(function() {
+		$('.name_tag_open').toggle("slow");
+		$('.message_open').hide();
+		$('.notice_open').hide();
+	});
 });
 
- $(function(){
-     $('.gnb a.ico_name_tag').click(function() {
-
-     $('.name_tag_open').toggle("slow");
-	 $('.message_open').hide();
-	 $('.notice_open').hide();
-
-     });
+$(function(){
+	$('.gnb a.ico_message').click(function() {
+   	$('.message_open').toggle("slow");
+ 		$('.name_tag_open').hide();
+ 		$('.notice_open').hide();
+  });
 });
 
- $(function(){
-     $('.gnb a.ico_message').click(function() {
-
-     $('.message_open').toggle("slow");
-	 $('.name_tag_open').hide();
-	 $('.notice_open').hide();
-     });
+$(function() {
+  $('.gnb a.ico_notice').click(function() {
+  	$('.notice_open').toggle("slow");
+ 		$('.name_tag_open').hide();
+ 		$('.message_open').hide();
+  });
 });
 
- $(function(){
-     $('.gnb a.ico_notice').click(function() {
-
-     $('.notice_open').toggle("slow");
-	 $('.name_tag_open').hide();
-	 $('.message_open').hide();
-     });
-});
-
- $(function(){
-     $('.notice > a').click(function() {
-
-     $('.kaywon').toggle();
-	 $('.notice > a').hide();
-     });
+$(function() {
+	$('.notice > a').click(function() {
+		$('.kaywon').toggle();
+ 		$('.notice > a').hide();
+  });
 });
 
 $(function() {
@@ -135,8 +131,8 @@ $(function() {
 	});
 });
 
- $(function(){
-     $('.news').accordion({
-      heightStyle: "content"
-    });
+$(function(){
+  $('.news').accordion({
+    heightStyle: "content"
+  });
 });
