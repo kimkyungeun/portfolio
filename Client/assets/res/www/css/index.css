@@ -35,7 +35,7 @@ div.bu_box { float: left; width: 30%; height: 100px;}
 div.dialog { float: left; width: 70%;}
 
 .opponent::after,
-.kke::after { content: ''; display : block; clear : both;}
+.kke::after { content: ''; display: block; clear : both;}
 
 .kakaotalkConversation { padding: 100px 0; box-sizing: border-box; margin-top: 100px; background: #C0D1DB;}
 .kakaotalkConversation > div { margin: 0 auto; width: 900px;}
