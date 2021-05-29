@@ -19,7 +19,7 @@ etc
 
 /* header */
 header { display:block; height:100%; background:#1D1464;}
-h1 { text-align:center;}
+h1 { padding:100px 0 0 0; box-sizing:border-box; text-align:center;}
 h1 a { font-size:30px; color:#fff;}
 .listMenu { padding:50px 0 0 0; text-align:center;}
 .listMenu li{ display:inline-block; padding:0 10px;}
