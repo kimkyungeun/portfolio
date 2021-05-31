@@ -82,17 +82,6 @@ etc
 .container a.goodchoice { background:url(../images/txt/@goodchoice_small.jpg) 50% 0 no-repeat; background-size:130%;}
 .container a.hanil { background:url(../images/txt/@hanil_small.jpg) 50% 50% no-repeat; background-size:130%;}
 .container a.airwindow { background:url(../images/txt/@airwindow_small.jpg) 50% 50% no-repeat; background-size:130%;}
-.container a.etc_book01 { background:url(../images/txt/@etc_book01_small.jpg) 50% 50% no-repeat; background-size:130%;}
-.container a.etc_book02 { background:url(../images/txt/@etc_book02_small.jpg) 50% 50% no-repeat; background-size:130%;}
-.container a.etc_book03 { background:url(../images/txt/@etc_book03_small.jpg) 50% 50% no-repeat; background-size:130%;}
-.container a.etc_ad01 { background:url(../images/txt/@etc_leaflet_small.jpg) 50% 50% no-repeat; background-size:110%;}
-.container a.etc_ad02 { background:url(../images/txt/@etc_gift_certificate_small.jpg) 50% 50% no-repeat; background-size:110%;}
-.container a.etc_ad03 { background:url(../images/txt/@etc_poster_small.jpg) 50% 50% no-repeat; background-size:100%;}
-.container a.etc_ad04 { background:url(../images/txt/@etc_brochure01_small.jpg) 50% 50% no-repeat; background-size:130%;}
-.container a.etc_ad05 { background:url(../images/txt/@etc_brochure02_small.jpg) 50% 50% no-repeat; background-size:130%;}
-.container a.etc_ad06 { background:url(../images/txt/@etc_banner01_small.jpg) 50% 50% no-repeat; background-size:100%;}
-.container a.etc_ad07 { background:url(../images/txt/@etc_banner02_small.jpg) 50% 50% no-repeat; background-size:100%;}
-.container a.etc_ad08 { background:url(../images/txt/@etc_placard_small.jpg) 50% 50% no-repeat; background-size:100%;}
 .container a.web:hover { background:url(../images/buico/ico_small_web.png) 50% 50% no-repeat #fff;}
 .container a.mobile:hover { background:url(../images/buico/ico_small_mobile.png) 50% 50% no-repeat #fff;}
 .container a.responsive_web:hover { background:url(../images/buico/ico_small_responsive_web.png) 50% 50% no-repeat #fff;}
@@ -105,7 +94,7 @@ etc
 .alert > div a { position:absolute; right:15px; top:15px;}
 
 /* &popup */
-.popupMessage { display:block; position:fixed; right:50px; bottom:62px; padding:30px 100px 30px; border:1px solid #ccc; border-radius:5px; box-shadow:0 5px 10px rgba(0,0,0,0.2); background:#fff; z-index:10;  box-sizing:border-box; }
+.popup_message { display:block; position:fixed; right:50px; bottom:62px; padding:30px 100px 30px; border:1px solid #ccc; border-radius:5px; box-shadow:0 5px 10px rgba(0,0,0,0.2); background:#fff; z-index:10;  box-sizing:border-box; }
 .message { margin-bottom:15px; font-size:17px; color:#999; text-align: center;}
 .btn_message { padding: 10px 20px; border-radius:4px; font-size: 15px;}
 .btn_message:hover { background: red; font-weight: bold; color: yellow;}
