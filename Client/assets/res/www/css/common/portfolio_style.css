@@ -21,11 +21,11 @@ etc
 header { display:block; height:100%; background:#1D1464;}
 h1 { padding:100px 0 0 0; box-sizing:border-box; text-align:center;}
 h1 a { font-size:30px; color:#fff;}
-.listMenu { padding:50px 0 0 0; text-align:center;}
-.listMenu li{ display:inline-block; padding:0 10px;}
-.listMenu li a { font-size:25px; color:#1D1464;}
-.listMenu li a:hover { font-weight:bold;}
-.typingMente { margin:100px 0 0 0; text-align:center;}
+.list_menu { padding:50px 0 0 0; text-align:center;}
+.list_menu li{ display:inline-block; padding:0 10px;}
+.list_menu li a { font-size:25px; color:#1D1464;}
+.list_menu li a:hover { font-weight:bold;}
+.typing_mente { margin:100px 0 0 0; text-align:center;}
 .mente { font-size:14px; color:#fff; text-shadow:0 0 5px #000;}
 
 /* footer */
