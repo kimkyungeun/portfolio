@@ -2,17 +2,25 @@
 /* CSS Document */
 
 /* 속성 제공 순서
+z-index
 overflow
 display
 float
 position
 left,right,top,bottom
-padding
 margin
+padding
+box-sizing
+box-shadow
 width
 height
+line-height
 background
 border
-font
-etc
+border-radius
+text-align
+text-shadow
+font-size
+font-weight
+color
 */
