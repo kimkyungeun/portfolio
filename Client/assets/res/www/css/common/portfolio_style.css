@@ -2,31 +2,45 @@
 /* CSS Document */
 
 /* 속성 제공 순서
+z-index
 overflow
 display
 float
 position
 left,right,top,bottom
-padding
 margin
+padding
+box-sizing
+box-shadow
 width
 height
+line-height
 background
 border
-font
-etc
+border-radius
+text-align
+text-shadow
+font-size
+font-weight
+color
 */
 
 /* header */
 header { display:block; height:100%; background:#1D1464;}
 h1 { padding:100px 0 0 0; box-sizing:border-box; text-align:center;}
 h1 a { font-size:30px; color:#fff;}
-.list_menu { padding:50px 0 0 0; text-align:center;}
-.list_menu li{ display:inline-block; padding:0 10px;}
+.list_menu { padding:50px 0 0 0; box-sizing:border-box; text-align:center;}
+.list_menu li{ display:inline-block; padding:0 10px; box-sizing:border-box;}
 .list_menu li a { font-size:25px; color:#1D1464;}
 .list_menu li a:hover { font-weight:bold;}
 .typing_mente { margin:100px 0 0 0; text-align:center;}
-.mente { font-size:14px; color:#fff; text-shadow:0 0 5px #000;}
+.mente { text-shadow:0 0 5px #000; font-size:14px; color:#fff;}
 
 /* footer */
-footer { padding:40px 0; background:#1D1464; font-size:14px; text-align:center; color:#fff;}
+footer { padding:40px 0; box-sizing:border-box; background:#1D1464; text-align:center; font-size:14px; color:#fff;}
+
+/* &popup */
+.popup_message { z-index:10; display:block; position:fixed; right:50px; bottom:62px; padding:30px 100px 30px; box-sizing:border-box; box-shadow:0 5px 10px rgba(0,0,0,0.2); background:#fff; border:1px solid #ccc; border-radius:5px;}
+.message { margin-bottom:15px; text-align:center; font-size:17px; color:#999;}
+.btn_message { padding:10px 20px; border-radius:4px; font-size:15px;}
+.btn_message:hover { background:red; font-weight:bold; color:yellow;}
