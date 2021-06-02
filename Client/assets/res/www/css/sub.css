@@ -2,78 +2,87 @@
 /* CSS Document */
 
 /* 속성 제공 순서
+z-index
 overflow
 display
 float
 position
 left,right,top,bottom
-padding
 margin
+padding
+box-sizing
+box-shadow
 width
 height
+line-height
 background
 border
-font
-etc
+border-radius
+text-align
+text-shadow
+font-size
+font-weight
+color
 */
+
+main ul + div { margin:0 auto; width:960px;}
+main ul + div > section { margin:15px 0 100px 0; border:1px solid #d3d6db;}
 
 /* kke_info.html */
 .contents_information section > div { height:60px; background:#f5f7f8; border-bottom:1px solid #d3d6db;}
-.contents_information section > div h2 { padding:0 0 0 50px; background:url(../images/buico/ico_profile.png) no-repeat 19px 50%; font-size:20px; line-height:60px;}
+.contents_information section > div h2 { padding:0 0 0 50px; box-sizing:border-box; line-height:60px; background:url(../images/buico/ico_profile.png) no-repeat 19px 50%; font-size:20px;}
 .tabs { background:#fff;}
-.tabs > ul { float:left; padding:30px 0 0 0; width:25%;}
-.tabs > ul li a { display:block; padding:0 0 0 20px; margin:0 0 0 3px; height:40px; font-size:13px; color:#737373; line-height:40px;}
+.tabs > ul { float:left; padding:30px 0 0 0; box-sizing:border-box;  width:25%;}
+.tabs > ul li a { display:block; margin:0 0 0 3px; padding:0 0 0 20px; box-sizing:border-box; height:40px; line-height:40px; font-size:13px; color:#737373;}
 .tabs > ul li a:hover { color:#000;}
 .tabs > ul li.ui-state-active a { margin:0 0 0 0; border-left:3px solid #3b5998; font-weight:bold; color:#000;}
-.tabs > div { float:left; padding:30px 20px 30px 20px; width:75%; min-height:380px; border-left:1px solid #d3d6db; box-sizing:border-box;}
+.tabs > div { float:left; padding:30px 20px 30px 20px; box-sizing:border-box; width:75%; min-height:380px; border-left:1px solid #d3d6db;}
 .information_index { width:100%;}
 .information_index > div:first-child { float:left; width:70%;}
-.information_index > div:first-child div { padding:20px 0 40px 50px; border-top:1px solid #d3d6db;}
-.information_index > div:first-child div p { padding:5px 0 0 0;}
-.information_index > div:first-child div p:first-child { padding:0 0 0 0;}
-.information_index > div:first-child div:first-child { padding:0 0 40px 50px; background:url(../images/buico/ico_school.png) no-repeat; border:none;}
+.information_index > div:first-child div { padding:20px 0 40px 50px; box-sizing:border-box; border-top:1px solid #d3d6db;}
+.information_index > div:first-child div p { padding:5px 0 0 0; box-sizing:border-box;}
+.information_index > div:first-child div p:first-child { padding:0 0 0 0; box-sizing:border-box;}
+.information_index > div:first-child div:first-child { padding:0 0 40px 50px; box-sizing:border-box; background:url(../images/buico/ico_school.png) no-repeat; border:none;}
 .information_index > div:first-child div:last-child { background:url(../images/buico/ico_abode.png) no-repeat 0 20px;}
-.information_index > div + div { float:left; padding:0 0 0 20px; width:30%; box-sizing:border-box;}
-.information_index > div + div img { padding:0 10px 0 0;}
-.information_index > div + div p { display:inline-block; padding:20px 0 0 0;}
-.information_index > div + div div:first-child img { padding:0 12px 0 2px;}
-.information_index > div + div div:first-child p { padding:0 0 0 0;}
+.information_index > div + div { float:left; padding:0 0 0 20px; box-sizing:border-box; width:30%;}
+.information_index > div + div img { padding:0 10px 0 0; box-sizing:border-box;}
+.information_index > div + div p { display:inline-block; padding:20px 0 0 0; box-sizing:border-box;}
+.information_index > div + div div:first-child img { padding:0 12px 0 2px; box-sizing:border-box;}
+.information_index > div + div div:first-child p { padding:0 0 0 0; box-sizing:border-box;}
 .information_career h3,
 .information_contact h3,
-.information_introduction h3 { padding:0 0 10px 0; border-bottom:1px solid #d3d6db;}
+.information_introduction h3 { padding:0 0 10px 0; box-sizing:border-box; border-bottom:1px solid #d3d6db;}
 .table01 { margin:20px 0 50px 0; text-align:center;}
 .table01 thead { background:#f2f6f9;}
-.table01 thead th { padding:10px 0 10px 0; border-left:1px solid #d3d6db; font-size:13px; color:#737373;}
+.table01 thead th { padding:10px 0 10px 0; box-sizing:border-box; border-left:1px solid #d3d6db; font-size:13px; color:#737373;}
 .table01 thead th:first-child { border:none;}
 .table01 tbody tr { border-top:1px solid #d3d6db;}
-.table01 tbody td { padding:10px 10px 10px 10px; border-left:1px solid #d3d6db; font-size:12px; color:#000;}
+.table01 tbody td { padding:10px 10px 10px 10px; box-sizing:border-box; line-height:15px; border-left:1px solid #d3d6db; font-size:12px; color:#000;}
 .table01 tbody td:first-child { border:none;}
-.table01 tbody .period { text-indent:17px;}
-.table01 tbody .company { text-align:left; line-height:20px;}
+.table01 tbody .company { line-height:20px; text-align:left;}
 .table01 tbody .company span { margin:0 4px 0 0; background:#f0f5f9; border:1px solid #c1d2e6; font-size:11px; color:#95adc5;}
-.information_contact div.kimkyungeun { padding:20px 0 0 0;}
+.information_contact div.kimkyungeun { padding:20px 0 0 0; box-sizing:border-box;}
 .information_contact .award { clear:both;}
 .table02 { margin:0 0 50px 0;}
 .table02 tbody tr { height:30px; border-top:1px solid #d3d6db; border-bottom:1px solid #d3d6db;}
 .table02 tbody th { background:#f2f6f9; border-right:1px solid #d3d6db;}
-.table02 tbody td { padding:0 0 0 10px;}
+.table02 tbody td { padding:0 0 0 10px; box-sizing:border-box;}
 
 /* kke_portfolio.html */
-.contents_portfolio,
-.contents_story { margin:0 auto; width:960px;}
-.contents_information section,
-.contents_portfolio section { margin:15px 0 0 0; border:1px solid #d3d6db;}
 .contents_portfolio section > div { background:#f5f7f8; border-bottom:1px solid #d3d6db;}
-.contents_portfolio section > div h2 { padding:0 0 0 50px; background:url(../images/buico/ico_portfolio.png) no-repeat 19px 50%; font-size:20px; line-height:60px;}
+.contents_portfolio section > div h2 { padding:0 0 0 50px; box-sizing:border-box; line-height:60px; background:url(../images/buico/ico_portfolio.png) no-repeat 19px 50%; font-size:20px;}
 .portfolio_list { height:50px; line-height:50px; background:#f5f7f8; border-bottom:1px solid #d3d6db;}
-.portfolio_list > a { position:relative; padding:0 0 10px 30px; font-size:13px; color:#737373;}
+.portfolio_list > a { position:relative; padding:0 0 10px 30px; box-sizing:border-box; font-size:13px; color:#737373;}
 .portfolio_list a:hover { color:#000;}
-.is-checked:after { content:""; display:block; position:absolute; left:50%; bottom:-12px; margin:0 0 0 10px; width:10px; height:10px; background:#fff; border-top:1px solid #d3d6db; border-left:1px solid #d3d6db; transform:rotate(45deg);}
+.is-checked:after { content:""; display:block; position:absolute; left:50%; bottom:-12.5px; margin:0 0 0 10px; width:10px; height:10px; background:#fff; border-top:1px solid #d3d6db; border-left:1px solid #d3d6db; transform:rotate(45deg);}
 .is-checked { font-weight:bold; color:#000;}
-.portfolio_text:after {content:'';display:block;clear:both;}
-.portfolio_text { position:relative; padding:20px 30px 20px 30px; background:#fff; box-sizing:border-box;}
-.portfolio_text > div { clear:both;}
-.container { float:left; position:relative; width:210px; height:300px; margin:5px 5px 10px 5px; border:1px solid #d3d6db;}
+.portfolio_text:after { content:''; display:block; clear:both;}
+.portfolio_text { position:relative; padding:20px 30px 20px 30px; box-sizing:border-box; min-height:570px; background:#fff;}
+.portfolio_text > div { clear:both; padding:0 0 100px 0; box-sizing:border-box;}
+.portfolio_text h3 { font-size:20px; font-weight:bold;}
+.portfolio_text h3 + p { padding:10px 0 30px 15px; box-sizing:border-box; width:750px; line-height:20px; font-size:14px; word-break:normal;}
+.container { float:left; position:relative; margin:5px 5px 10px 5px; width:210px; height:300px; border:1px solid #d3d6db;}
+.container h4 { position:absolute; bottom:0; padding:20px 0 0 0; box-sizing:border-box; width:100%; height:100px; line-height:20px; background:#f0f5f9; text-align:center; font-size:14px; color:#000;}
 .container a { position:absolute; top:0; width:100%; height:200px;}
 .container a.posco { background:url(../images/txt/@posco_small.jpg) 50% 50% no-repeat; background-size:130%;}
 .container a.tomntoms { background:url(../images/txt/@tomntoms_small.jpg) 50% 50% no-repeat; background-size:130%;}
@@ -86,15 +95,8 @@ etc
 .container a.mobile:hover { background:url(../images/buico/ico_small_mobile.png) 50% 50% no-repeat #fff;}
 .container a.responsive_web:hover { background:url(../images/buico/ico_small_responsive_web.png) 50% 50% no-repeat #fff;}
 .container a.etc:hover { background:url(../images/buico/ico_small_photo.png) 50% 50% no-repeat #fff;}
-.container h3 { position:absolute; bottom:0; width:100%; height:100px; font-size:14px; color:#000; line-height:100px; text-align:center;}
 .alert { position:fixed; z-index:23; left:0; top:0; width:100%; height:100%; background:rgba(0, 0, 0, 0.7); text-align:center;}
-.alert > div { position:relative; padding:70px 50px 50px 50px; margin:100px auto; width:800px; background:#3b5998; box-sizing:border-box;}
-.alert > div div { padding:20px 10px 20px 10px; border:1px solid #fff; font-size:12px; color:#fff;}
-.alert > div p { padding:30px 0 0 0; font-size:13px; font-weight:bold; color:#fff;}
+.alert > div { position:relative; margin:100px auto; padding:70px 50px 50px 50px; box-sizing:border-box; width:800px; background:#3b5998;}
+.alert > div div { padding:20px 10px 20px 10px; box-sizing:border-box; border:1px solid #fff; font-size:12px; color:#fff;}
+.alert > div p { padding:30px 0 0 0; box-sizing:border-box; font-size:13px; font-weight:bold; color:#fff;}
 .alert > div a { position:absolute; right:15px; top:15px;}
-
-/* &popup */
-.popup_message { display:block; position:fixed; right:50px; bottom:62px; padding:30px 100px 30px; border:1px solid #ccc; border-radius:5px; box-shadow:0 5px 10px rgba(0,0,0,0.2); background:#fff; z-index:10;  box-sizing:border-box; }
-.message { margin-bottom:15px; font-size:17px; color:#999; text-align: center;}
-.btn_message { padding: 10px 20px; border-radius:4px; font-size: 15px;}
-.btn_message:hover { background: red; font-weight: bold; color: yellow;}
