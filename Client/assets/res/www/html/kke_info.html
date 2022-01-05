@@ -3,15 +3,11 @@
 <head>
 <meta charset="utf-8">
 <title>김경은</title>
-<link rel="stylesheet" type="text/css" href="../css/common/default.css">
-<link rel="stylesheet" type="text/css" href="../css/common/portfolio_style.css">
-<link rel="stylesheet" type="text/css" href="../css/common/portfolio_style_tablet.css" media="screen and (min-width:770px) and (max-width:1023px)">
-<link rel="stylesheet" type="text/css" href="../css/common/portfolio_style_mobile.css" media="screen and (max-width:769px)">
-<link rel="stylesheet" type="text/css" href="../css/sub.css">
-<link rel="stylesheet" type="text/css" href="../css/sub_tablet.css" media="screen and (min-width:770px) and (max-width:1023px)">
-<link rel="stylesheet" type="text/css" href="../css/sub_mobile.css" media="screen and (max-width:769px)">
-<script src="../js/jquery-1.12.4.min.js"></script>
-<script src="../js/jquery-ui.js"></script>
+<link type="text/css" rel="stylesheet" href="../css/portfolio.css">
+<link type="text/css" rel="stylesheet" href="../css/portfolio_mobile.css" media="screen and (max-width:768px)">
+<link type="text/css" rel="stylesheet" href="../css/portfolio_tablet.css" media="screen and (min-width:769px) and (max-width:1023px)">
+<script src="../js/libs/jquery-1.12.4.min.js"></script>
+<script src="../js/libs/jquery-ui.js"></script>
 <script src="../js/libs/idangerous.swiper.js"></script>
 <script src="../js/libs/source01.js"></script>
 <script src="http://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
@@ -24,13 +20,16 @@
   <h1>
     <a href="#a">ㄱ ㅣ ㅁ ㄱ ㅕ ㅇ ㅇ ㅡ ㄴ</a>
   </h1>
+  <div class="typing_mente">
+    <span class="mente"></span>
+  </div>
 </header>
 
 <main>
   <ul class="list_menu">
-    <li><a href="../../../../../index.html">1</a></li>
-    <li class="list_menu_position"><a href="kke_info.html">2</a></li>
-    <li><a href="kke_portfolio.html">3</a></li>
+    <li><a href="./kke_home.html">1</a></li>
+    <li class="list_menu_position"><a href="./kke_info.html">2</a></li>
+    <li><a href="./kke_portfolio.html">3</a></li>
   </ul>
   <div class="contents_information">
     <section>
@@ -49,7 +48,7 @@
             <a href="#informationEducation">학력 및 교육사항</a>
           </li>
           <li>
-            <a href="#informationIntroduction">김경은님에 대한 자세한 소개</a>
+            <a href="#informationIntroduction">자격증</a>
           </li>
         </ul>
         <div class="information_text">
@@ -107,7 +106,7 @@
                     <tr>
                       <th>근무기간</th>
                       <th>회사명</th>
-                      <th>부서명/직급/직책</th>
+                      <th>부서명 &#47; 직급 &#47; 직책</th>
                       <th>담당업무</th>
                     </tr>
                   </thead>
@@ -157,17 +156,23 @@
                     <tr>
                       <th>기간</th>
                       <th>구분</th>
-                      <th>학교/교육기관</th>
+                      <th>학교 &#47; 교육기관</th>
                       <th>내용</th>
                     </tr>
                   </thead>
                     <tbody>
+                      <tr>
+                        <td>2022</td>
+                        <td>취득</td>
+                        <td>공학사 &gt; 멀티미디어학</td>
+                        <td>평점평균 80.53 &#47; 100</td>
+                      </tr>
                     <tr>
                       <td>2017. 06 &#126; 2017. 12</td>
                       <td>교육</td>
                       <td>한국소프트웨어기술진흥협회</td>
                       <td>
-                        Java Framework & 안드로이드
+                        Java Framework &#38; 안드로이드
                         <br />
                         개발자 양성과정
                       </td>
@@ -188,7 +193,7 @@
                       <td>2011. 02 &#126; 2013. 02</td>
                       <td>졸업</td>
                       <td>계원예술대학교 &gt; 산업디자인과</td>
-                      <td>학점 3.56 / 4.5</td>
+                      <td>학점 3.56 &#47; 4.5</td>
                     </tr>
                     <tr>
                       <td>2009</td>
@@ -201,7 +206,7 @@
               </div>
             </div>
           </div>
-          <div>
+          <div class="information_certificate" id="informationCertificate">
             <div>
               <h3><b class="font_blue">자격증</b></h3>
               <div>
@@ -239,30 +244,6 @@
               </div>
             </div>
           </div>
-          <div class="information_introduction" id="informationIntroduction">
-            <div>
-              <h3><b class="font_blue">자기소개서</b></h3>
-              <div>
-                <table class="table01">
-                  <caption class="hide">
-                    <details>
-                      <summary>자기소개서</summary>
-                    </details>
-                  </caption>
-                  <thead>
-                    <tr>
-                      <th>자기소개서</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>내용넣기</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
         </div>
       </article>
     </section>
@@ -270,9 +251,10 @@
 </main>
 
 <footer>
-  <p class="copyright">ⓒ 2021. Kim KyungEun All Rights Reserved</p>
+  <p class="copyright">ⓒ 2022. Kim KyungEun All Rights Reserved</p>
 </footer>
 
 </body>
-<script type="text/javascript" src="./js/ui/kkeInfo.js"></script>
+<script type="text/javascript" src="../js/extends.js"></script>
+<script type="text/javascript" src="../js/ui/kkeInfo.js"></script>
 </html>

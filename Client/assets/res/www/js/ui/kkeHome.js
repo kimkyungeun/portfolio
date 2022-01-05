@@ -1,6 +1,6 @@
 /**
- * @file index.js
- * <p>SCREEN_NAME: 메인</p>
+ * @file kkeHome.js
+ * <p>SCREEN_NAME: 홈</p>
  */
 
 /**

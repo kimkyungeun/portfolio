@@ -1,13 +1,17 @@
 @charset "utf-8";
-/* CSS Document */
 
-/* 속성 제공 순서
+@import url("./common/portfolio_reset.css"); /* CSS 초기화 */
+@import url("./common/portfolio_style.css"); /* 공통 CSS */
+
+/*
+- CSS 속성 제공 순서 -
+clear
 z-index
 overflow
 display
 float
 position
-left,right,top,bottom
+top,right,bottom,left
 margin
 padding
 box-sizing
@@ -18,19 +22,78 @@ line-height
 background
 border
 border-radius
+vertical-align
 text-align
 text-shadow
 font-size
 font-weight
+letter-spacing
+white-spacing
+word-spacing
 color
 */
+
+/* main */
+.profile { margin:0 auto; padding:80px 0 200px 0; box-sizing:border-box; height:100%; text-align:center;}
+.profile h2 { padding-bottom:50px; box-sizing:border-box;}
+.card { position:relative; margin:0 auto; width:700px; height:380px;}
+.card > div { position:absolute; left:0; top:0; transition:all 1s;}
+.card:hover .card_mask { transform:rotateY(180deg); opacity:0;}
+.card:hover .card_01{ transform:rotateY(0); opacity:1;}
+.card .card_mask { width:700px; height:380px; background:url(../img/bg/@visual01.jpg) no-repeat 50% 20%; background-size: 100%; border-radius:10px; opacity:1;}
+.card .card_01{ padding:50px; box-sizing:border-box; box-shadow:#ccc 2px 2px 2px; width:700px; height:380px; background:#1D1464; border-radius:10px; text-align:center; transform:rotateY(180deg); opacity:0;}
+.card .card_01 .name { display:inline-block; margin:30px 0; width:300px; height:40px; line-height:40px; font-size:40px; color:#fff;}
+.card .card_01 > p + p { font-size:20px;}
+.card .card_01 > ul { position:absolute; right:50px; bottom:50px;}
+.card .card_01 > ul li { line-height:20px; text-align:right; font-size:14px; color:#fff;}
+
+div.bu_box { float:left; width:30%; height:100px;}
+div.dialog { float:left; width:70%;}
+
+.opponent::after,
+.kke::after { content:''; display:block; clear:both;}
+
+.kakaotalk_conversation { margin-top:100px; padding:100px 0; box-sizing:border-box; background:#C0D1DB;}
+.kakaotalk_conversation > div { margin:0 auto; width:900px;}
+.kakaotalk_conversation > div > div { margin:50px 0; width:100%;}
+.kakaotalk_conversation p { display:inline-block; padding:10px 20px 10px 20px; box-sizing:border-box; line-height:34px; border-radius:5px; font-size:17px;}
+
+.opponent h2 { margin-bottom:15px;}
+.opponent .dialog > div { position:relative;}
+.opponent .dialog > div > div:first-child { padding:0 0 0 95px; box-sizing:border-box;}
+.opponent .dialog > div > div + div { position:absolute; left:0; top:3px;}
+.opponent p { background:#fff;}
+.opponent_image { overflow:hidden; width:70px; height:70px; background:#fff; border:1px solid #fff; border-radius:60px;}
+.opponent_image img { width:100%;}
+
+.kke .dialog > div { text-align:right;}
+.kke img.emoticon { margin-bottom:50px;}
+.kke p { background:#fdec4f; text-align:left;}
+
+/* popup */
+.popup_message { z-index:10; display:block; position:fixed; right:50px; bottom:62px; padding:30px 100px 30px; box-sizing:border-box; box-shadow:0 5px 10px rgba(0,0,0,0.2); background:#fff; border:1px solid #ccc; border-radius:5px;}
+.message { margin-bottom:15px; text-align:center; font-size:17px; color:#999;}
+.btn_message { padding:10px 20px; box-sizing:border-box; border-radius:4px; font-size:15px;}
+.btn_message:hover { background:red; font-weight:bold; color:yellow;}
+
+
+
+
+
+
+
+
+
+
+
+
 
 main ul + div { margin:0 auto; width:960px;}
 main ul + div > section { margin:15px 0 100px 0; border:1px solid #d3d6db;}
 
 /* kke_info.html */
 .contents_information section > div { height:60px; background:#f5f7f8; border-bottom:1px solid #d3d6db;}
-.contents_information section > div h2 { padding:0 0 0 50px; box-sizing:border-box; line-height:60px; background:url(../images/buico/ico_profile.png) no-repeat 19px 50%; font-size:20px;}
+.contents_information section > div h2 { padding:0 0 0 50px; box-sizing:border-box; line-height:60px; background:url(../img/buico/ico_profile.png) no-repeat 19px 50%; font-size:20px;}
 .tabs { background:#fff;}
 .tabs > ul { float:left; padding:30px 0 0 0; box-sizing:border-box;  width:25%;}
 .tabs > ul li a { display:block; margin:0 0 0 3px; padding:0 0 0 20px; box-sizing:border-box; height:40px; line-height:40px; font-size:13px; color:#737373;}
@@ -42,8 +105,8 @@ main ul + div > section { margin:15px 0 100px 0; border:1px solid #d3d6db;}
 .information_index > div:first-child div { padding:20px 0 40px 50px; box-sizing:border-box; border-top:1px solid #d3d6db;}
 .information_index > div:first-child div p { padding:5px 0 0 0; box-sizing:border-box;}
 .information_index > div:first-child div p:first-child { padding:0 0 0 0; box-sizing:border-box;}
-.information_index > div:first-child div:first-child { padding:0 0 40px 50px; box-sizing:border-box; background:url(../images/buico/ico_school.png) no-repeat; border:none;}
-.information_index > div:first-child div:last-child { background:url(../images/buico/ico_abode.png) no-repeat 0 20px;}
+.information_index > div:first-child div:first-child { padding:0 0 40px 50px; box-sizing:border-box; background:url(../img/buico/ico_school.png) no-repeat; border:none;}
+.information_index > div:first-child div:last-child { background:url(../img/buico/ico_abode.png) no-repeat 0 20px;}
 .information_index > div + div { float:left; padding:0 0 0 20px; box-sizing:border-box; width:30%;}
 .information_index > div + div img { padding:0 10px 0 0; box-sizing:border-box;}
 .information_index > div + div p { display:inline-block; padding:20px 0 0 0; box-sizing:border-box;}
@@ -51,7 +114,8 @@ main ul + div > section { margin:15px 0 100px 0; border:1px solid #d3d6db;}
 .information_index > div + div div:first-child p { padding:0 0 0 0; box-sizing:border-box;}
 .information_career h3,
 .information_contact h3,
-.information_introduction h3 { padding:0 0 10px 0; box-sizing:border-box; border-bottom:1px solid #d3d6db;}
+.information_education h3,
+.information_certificate h3 { padding:0 0 10px 0; box-sizing:border-box; border-bottom:1px solid #d3d6db;}
 .table01 { margin:20px 0 50px 0; text-align:center;}
 .table01 thead { background:#f2f6f9;}
 .table01 thead th { padding:10px 0 10px 0; box-sizing:border-box; border-left:1px solid #d3d6db; font-size:13px; color:#737373;}
@@ -70,7 +134,7 @@ main ul + div > section { margin:15px 0 100px 0; border:1px solid #d3d6db;}
 
 /* kke_portfolio.html */
 .contents_portfolio section > div { background:#f5f7f8; border-bottom:1px solid #d3d6db;}
-.contents_portfolio section > div h2 { padding:0 0 0 50px; box-sizing:border-box; line-height:60px; background:url(../images/buico/ico_portfolio.png) no-repeat 19px 50%; font-size:20px;}
+.contents_portfolio section > div h2 { padding:0 0 0 50px; box-sizing:border-box; line-height:60px; background:url(../img/buico/ico_portfolio.png) no-repeat 19px 50%; font-size:20px;}
 .portfolio_list { height:50px; line-height:50px; background:#f5f7f8; border-bottom:1px solid #d3d6db;}
 .portfolio_list > a { position:relative; padding:0 0 10px 30px; box-sizing:border-box; font-size:13px; color:#737373;}
 .portfolio_list a:hover { color:#000;}
@@ -84,17 +148,17 @@ main ul + div > section { margin:15px 0 100px 0; border:1px solid #d3d6db;}
 .container { float:left; position:relative; margin:5px 5px 10px 5px; width:210px; height:300px; border:1px solid #d3d6db;}
 .container h4 { position:absolute; bottom:0; padding:20px 0 0 0; box-sizing:border-box; width:100%; height:100px; line-height:20px; background:#f0f5f9; text-align:center; font-size:14px; color:#000;}
 .container a { position:absolute; top:0; width:100%; height:200px;}
-.container a.posco { background:url(../images/txt/@posco_small.jpg) 50% 50% no-repeat; background-size:130%;}
-.container a.tomntoms { background:url(../images/txt/@tomntoms_small.jpg) 50% 50% no-repeat; background-size:130%;}
-.container a.keb_bank { background:url(../images/txt/@keb_bank_small.jpg) 50% 0 no-repeat; background-size:130%;}
-.container a.kb_bank { background:url(../images/txt/@kb_bank_small.jpg) 50% 0 no-repeat; background-size:130%;}
-.container a.goodchoice { background:url(../images/txt/@goodchoice_small.jpg) 50% 0 no-repeat; background-size:130%;}
-.container a.hanil { background:url(../images/txt/@hanil_small.jpg) 50% 50% no-repeat; background-size:130%;}
-.container a.airwindow { background:url(../images/txt/@airwindow_small.jpg) 50% 50% no-repeat; background-size:130%;}
-.container a.web:hover { background:url(../images/buico/ico_small_web.png) 50% 50% no-repeat #fff;}
-.container a.mobile:hover { background:url(../images/buico/ico_small_mobile.png) 50% 50% no-repeat #fff;}
-.container a.responsive_web:hover { background:url(../images/buico/ico_small_responsive_web.png) 50% 50% no-repeat #fff;}
-.container a.etc:hover { background:url(../images/buico/ico_small_photo.png) 50% 50% no-repeat #fff;}
+.container a.posco { background:url(../img/txt/@posco_small.jpg) 50% 50% no-repeat; background-size:130%;}
+.container a.tomntoms { background:url(../img/txt/@tomntoms_small.jpg) 50% 50% no-repeat; background-size:130%;}
+.container a.keb_bank { background:url(../img/txt/@keb_bank_small.jpg) 50% 0 no-repeat; background-size:130%;}
+.container a.kb_bank { background:url(../img/txt/@kb_bank_small.jpg) 50% 0 no-repeat; background-size:130%;}
+.container a.goodchoice { background:url(../img/txt/@goodchoice_small.jpg) 50% 0 no-repeat; background-size:130%;}
+.container a.hanil { background:url(../img/txt/@hanil_small.jpg) 50% 50% no-repeat; background-size:130%;}
+.container a.airwindow { background:url(../img/txt/@airwindow_small.jpg) 50% 50% no-repeat; background-size:130%;}
+.container a.web:hover { background:url(../img/buico/ico_small_web.png) 50% 50% no-repeat #fff;}
+.container a.mobile:hover { background:url(../img/buico/ico_small_mobile.png) 50% 50% no-repeat #fff;}
+.container a.responsive_web:hover { background:url(../img/buico/ico_small_responsive_web.png) 50% 50% no-repeat #fff;}
+.container a.etc:hover { background:url(../img/buico/ico_small_photo.png) 50% 50% no-repeat #fff;}
 .alert { position:fixed; z-index:23; left:0; top:0; width:100%; height:100%; background:rgba(0, 0, 0, 0.7); text-align:center;}
 .alert > div { position:relative; margin:100px auto; padding:70px 50px 50px 50px; box-sizing:border-box; width:800px; background:#3b5998;}
 .alert > div div { padding:20px 10px 20px 10px; box-sizing:border-box; border:1px solid #fff; font-size:12px; color:#fff;}

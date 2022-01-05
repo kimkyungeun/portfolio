@@ -3,15 +3,11 @@
 <head>
 <meta charset="utf-8">
 <title>김경은</title>
-<link rel="stylesheet" type="text/css" href="../css/common/default.css">
-<link rel="stylesheet" type="text/css" href="../css/common/portfolio_style.css">
-<link rel="stylesheet" type="text/css" href="../css/common/portfolio_style_tablet.css" media="screen and (min-width:770px) and (max-width:1023px)">
-<link rel="stylesheet" type="text/css" href="../css/common/portfolio_style_mobile.css" media="screen and (max-width:769px)">
-<link rel="stylesheet" type="text/css" href="../css/sub.css">
-<link rel="stylesheet" type="text/css" href="../css/sub_tablet.css" media="screen and (min-width:770px) and (max-width:1023px)">
-<link rel="stylesheet" type="text/css" href="../css/sub_mobile.css" media="screen and (max-width:769px)">
-<script src="../js/jquery-1.12.4.min.js"></script>
-<script src="../js/jquery-ui.js"></script>
+<link type="text/css" rel="stylesheet" href="../css/portfolio.css">
+<link type="text/css" rel="stylesheet" href="../css/portfolio_mobile.css" media="screen and (max-width:768px)">
+<link type="text/css" rel="stylesheet" href="../css/portfolio_tablet.css" media="screen and (min-width:769px) and (max-width:1023px)">
+<script src="../js/libs/jquery-1.12.4.min.js"></script>
+<script src="../js/libs/jquery-ui.js"></script>
 <script src="../js/libs/idangerous.swiper.js"></script>
 <script src="../js/libs/source01.js"></script>
 <script src="http://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
@@ -24,13 +20,16 @@
   <h1>
     <a href="#a">ㄱ ㅣ ㅁ ㄱ ㅕ ㅇ ㅇ ㅡ ㄴ</a>
   </h1>
+  <div class="typing_mente">
+    <span class="mente"></span>
+  </div>
 </header>
 
 <main>
   <ul class="list_menu">
-    <li><a href="../../../../../index.html">1</a></li>
-    <li><a href="kke_info.html">2</a></li>
-    <li class="listMenuPosition"><a href="kke_portfolio.html">3</a></li>
+    <li><a href="./kke_home.html">1</a></li>
+    <li><a href="./kke_info.html">2</a></li>
+    <li class="listMenuPosition"><a href="./kke_portfolio.html">3</a></li>
   </ul>
   <div class="contents_portfolio">
     <section>
@@ -539,9 +538,10 @@
 </main>
 
 <footer>
-  <p class="copyright">ⓒ 2021. Kim KyungEun All Rights Reserved</p>
+  <p class="copyright">ⓒ 2022. Kim KyungEun All Rights Reserved</p>
 </footer>
 
 </body>
-<script type="text/javascript" src="./js/ui/kkePortfolio.js"></script>
+<script type="text/javascript" src="../js/extends.js"></script>
+<script type="text/javascript" src="../js/ui/kkePortfolio.js"></script>
 </html>
