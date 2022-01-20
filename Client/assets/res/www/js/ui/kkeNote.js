@@ -1,6 +1,6 @@
 /**
- * @file kkePortfolio.js
- * <p>SCREEN_NAME: 김경은 포트폴리오</p>
+ * @file kkeNote.js
+ * <p>SCREEN_NAME: 김경은 노트</p>
  */
 
 /**

@@ -92,8 +92,8 @@ main ul + div { margin:0 auto; width:960px;}
 main ul + div > section { margin:15px 0 100px 0; border:1px solid #d3d6db;}
 
 /* kke_info.html */
-.contents_information section > div { height:60px; background:#f5f7f8; border-bottom:1px solid #d3d6db;}
-.contents_information section > div h2 { padding:0 0 0 50px; box-sizing:border-box; line-height:60px; background:url(../img/buico/ico_profile.png) no-repeat 19px 50%; font-size:20px;}
+.contents_info section > div { height:60px; background:#f5f7f8; border-bottom:1px solid #d3d6db;}
+.contents_info section > div h2 { padding:0 0 0 30px; box-sizing:border-box; line-height:60px; font-size:20px;}
 .tabs { background:#fff;}
 .tabs > ul { float:left; padding:30px 0 0 0; box-sizing:border-box;  width:25%;}
 .tabs > ul li a { display:block; margin:0 0 0 3px; padding:0 0 0 20px; box-sizing:border-box; height:40px; line-height:40px; font-size:13px; color:#737373;}
@@ -134,7 +134,7 @@ main ul + div > section { margin:15px 0 100px 0; border:1px solid #d3d6db;}
 
 /* kke_portfolio.html */
 .contents_portfolio section > div { background:#f5f7f8; border-bottom:1px solid #d3d6db;}
-.contents_portfolio section > div h2 { padding:0 0 0 50px; box-sizing:border-box; line-height:60px; background:url(../img/buico/ico_portfolio.png) no-repeat 19px 50%; font-size:20px;}
+.contents_portfolio section > div h2 { padding:0 0 0 30px; box-sizing:border-box; line-height:60px; font-size:20px;}
 .portfolio_list { height:50px; line-height:50px; background:#f5f7f8; border-bottom:1px solid #d3d6db;}
 .portfolio_list > a { position:relative; padding:0 0 10px 30px; box-sizing:border-box; font-size:13px; color:#737373;}
 .portfolio_list a:hover { color:#000;}
@@ -164,3 +164,7 @@ main ul + div > section { margin:15px 0 100px 0; border:1px solid #d3d6db;}
 .alert > div div { padding:20px 10px 20px 10px; box-sizing:border-box; border:1px solid #fff; font-size:12px; color:#fff;}
 .alert > div p { padding:30px 0 0 0; box-sizing:border-box; font-size:13px; font-weight:bold; color:#fff;}
 .alert > div a { position:absolute; right:15px; top:15px;}
+
+/* kke_note.html */
+.contents_note section > div { background:#f5f7f8; border-bottom:1px solid #d3d6db;}
+.contents_note section > div h2 { padding:0 0 0 30px; box-sizing:border-box; line-height:60px; font-size:20px;}

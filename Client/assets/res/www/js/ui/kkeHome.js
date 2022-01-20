@@ -4,12 +4,12 @@
  */
 
 /**
-* 화면 로딩 완료시
-* 화면 로딩완료시 한번 호출된다.
-*/
+ * 화면 로딩 완료시
+ * 화면 로딩완료시 한번 호출된다.
+ */
 jQuery(document).ready(function($) {
-		jQuery(function(j$) {
-		// header fixed
+  // header fixed
+	jQuery(function(j$) {
 		var myHeader = j$('.header_bar, .header_bar h1');
 		myHeader.data( 'position', myHeader.position() );
 		j$(window).scroll(function(){
@@ -33,17 +33,14 @@ jQuery(document).ready(function($) {
 				top: parseFloat( window.pageYOffset || b.scrollTop || e.scrollTop )
 			};
 		}
+	});
+  // header fixed
 
-		// header fixed
-		});
-
-		function kkk(){
-			 $('.gnb > a').click(function() {
-				 $('.gnb > p').toggleClass('aaa');
-			 });
-
-		} kkk();
-
+	function kkk(){
+		 $('.gnb > a').click(function() {
+			 $('.gnb > p').toggleClass('aaa');
+		 });
+	} kkk();
 };
 
 $(function() {
