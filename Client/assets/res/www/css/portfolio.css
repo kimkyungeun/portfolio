@@ -70,11 +70,6 @@ div.dialog { float:left; width:70%;}
 .kke img.emoticon { margin-bottom:50px;}
 .kke p { background:#fdec4f; text-align:left;}
 
-/* popup */
-.popup_message { z-index:10; display:block; position:fixed; right:50px; bottom:62px; padding:30px 100px 30px; box-sizing:border-box; box-shadow:0 5px 10px rgba(0,0,0,0.2); background:#fff; border:1px solid #ccc; border-radius:5px;}
-.message { margin-bottom:15px; text-align:center; font-size:17px; color:#999;}
-.btn_message { padding:10px 20px; box-sizing:border-box; border-radius:4px; font-size:15px;}
-.btn_message:hover { background:red; font-weight:bold; color:yellow;}
 
 
 
@@ -88,8 +83,9 @@ div.dialog { float:left; width:70%;}
 
 
 
-main ul + div { margin:0 auto; width:960px;}
-main ul + div > section { margin:15px 0 100px 0; border:1px solid #d3d6db;}
+
+main > div { margin:0 auto; width:960px;}
+main > div > section { margin:15px 0 100px 0; border:1px solid #d3d6db;}
 
 /* kke_info.html */
 .info section > div { height:60px; background:#f5f7f8; border-bottom:1px solid #d3d6db;}
@@ -135,9 +131,7 @@ main ul + div > section { margin:15px 0 100px 0; border:1px solid #d3d6db;}
 /* kke_portfolio.html */
 .portfolio section > div { background:#f5f7f8; border-bottom:1px solid #d3d6db;}
 .portfolio section > div h2 { padding:0 0 0 30px; box-sizing:border-box; line-height:60px; font-size:20px;}
-.portfolio .portfolio_list { height:50px; line-height:50px; background:#f5f7f8; border-bottom:1px solid #d3d6db;}
-.portfolio .portfolio_list > a { position:relative; padding:0 0 10px 30px; box-sizing:border-box; font-size:13px; color:#737373;}
-.portfolio .portfolio_list a:hover { color:#000;}
+
 .portfolio .is-checked:after { content:""; display:block; position:absolute; left:50%; bottom:-12.5px; margin:0 0 0 10px; width:10px; height:10px; background:#fff; border-top:1px solid #d3d6db; border-left:1px solid #d3d6db; transform:rotate(45deg);}
 .portfolio .is-checked { font-weight:bold; color:#000;}
 .portfolio .portfolio_text:after { content:''; display:block; clear:both;}
@@ -145,8 +139,13 @@ main ul + div > section { margin:15px 0 100px 0; border:1px solid #d3d6db;}
 .portfolio .portfolio_text > div { clear:both; padding:0 0 100px 0; box-sizing:border-box;}
 .portfolio .portfolio_text h3 { font-size:20px; font-weight:bold;}
 .portfolio .portfolio_text h3 + p { padding:10px 0 30px 15px; box-sizing:border-box; width:750px; line-height:20px; font-size:14px; word-break:normal;}
-.portfolio .portfolio_list { float:left; position:relative; margin:5px 5px 10px 5px; width:210px; height:300px; border:1px solid #d3d6db;}
-.portfolio .portfolio_list h4 { position:absolute; bottom:0; padding:20px 0 0 0; box-sizing:border-box; width:100%; height:100px; line-height:20px; background:#f0f5f9; text-align:center; font-size:14px; color:#000;}
+
+.portfolio .portfolio_list { position:relative; height:50px; line-height:50px; background:#f5f7f8; border-bottom:1px solid #d3d6db;}
+.portfolio .portfolio_list { margin:5px 5px 10px 5px; width:210px; height:300px; border:1px solid #d3d6db;}
+.portfolio .portfolio_list h4 { bottom:0; padding:20px 0 0 0; box-sizing:border-box; width:100%; height:100px; line-height:20px; background:#f0f5f9; text-align:center; font-size:14px; color:#000;}
+
+.portfolio .portfolio_list > a { position:relative; padding:0 0 10px 30px; box-sizing:border-box; font-size:13px; color:#737373;}
+.portfolio .portfolio_list a:hover { color:#000;}
 .portfolio .portfolio_list a { position:absolute; top:0; width:100%; height:200px;}
 .portfolio .portfolio_list a.posco { background:url(../img/txt/@posco_small.jpg) 50% 50% no-repeat; background-size:130%;}
 .portfolio .portfolio_list a.tomntoms { background:url(../img/txt/@tomntoms_small.jpg) 50% 50% no-repeat; background-size:130%;}
@@ -159,6 +158,7 @@ main ul + div > section { margin:15px 0 100px 0; border:1px solid #d3d6db;}
 .portfolio .portfolio_list a.mobile:hover { background:url(../img/buico/ico_small_mobile.png) 50% 50% no-repeat #fff;}
 .portfolio .portfolio_list a.responsive_web:hover { background:url(../img/buico/ico_small_responsive_web.png) 50% 50% no-repeat #fff;}
 .portfolio .portfolio_list a.etc:hover { background:url(../img/buico/ico_small_photo.png) 50% 50% no-repeat #fff;}
+
 .portfolio .alert { position:fixed; z-index:23; left:0; top:0; width:100%; height:100%; background:rgba(0, 0, 0, 0.7); text-align:center;}
 .portfolio .alert > div { position:relative; margin:100px auto; padding:70px 50px 50px 50px; box-sizing:border-box; width:800px; background:#3b5998;}
 .portfolio .alert > div div { padding:20px 10px 20px 10px; box-sizing:border-box; border:1px solid #fff; font-size:12px; color:#fff;}
