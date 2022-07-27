@@ -23,15 +23,15 @@
   <div class="typing_mente">
     <span class="mente"></span>
   </div>
-</header>
-
-<main>
-  <ul class="list_menu">
-    <li class="list_menu_position"><a href="./home.html">1</a></li>
+  <ul class="gnb">
+    <li class="gnb_select"><a href="./home.html">1</a></li>
     <li><a href="./info.html">2</a></li>
     <li><a href="./portfolio.html">3</a></li>
     <li><a href="./note.html">4</a></li>
   </ul>
+</header>
+
+<main>
   <div>
     <div class="profile clear" id="profile">
       <h2 class="font">About</h2>
@@ -140,12 +140,21 @@
     </div>
   </section>
 
-  <div class="popup_message">
-    <div class="message">
-      <div>"개발중"</div>
+  <div class="pop_wrap" id="popWrap">
+    <div class="pop_header" id="popHeader">!</div>
+    <div class="pop_container" id="popContainer">
+      <div class="pop_content" id="popContent">
+        개발중입니다.
+        <br />
+        <br />
+      </div>
+      <div class="btn_box">
+        <button type="button" class="btn1" id="btnClose">구경하기</button>
+      </div>
     </div>
-    <button type="button" class="btn_message">구경하기</button>
+    <div class="pop_footer" id="popFooter"></div>
   </div>
+
 </main>
 
 <footer>
