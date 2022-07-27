@@ -41,13 +41,11 @@ jQuery(document).ready(function($) {
 			 $('.gnb > p').toggleClass('aaa');
 		 });
 	} kkk();
-};
 
-$(function() {
-	$('.btn_message').click(function() {
-		$('.popupMessage').hide();
-	});
-});
+  $('#btnClose').click(function() {
+    $('#popWrap').hide();
+  });
+};
 
 $(function() {
 	$('.tabs').tabs();
