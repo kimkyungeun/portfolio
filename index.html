@@ -4,39 +4,39 @@
 <meta charset="utf-8" />
 <title>김경은</title>
 <style>
-	html, body { margin:0 0 0 0; padding:0 0 0 0; box-sizing:border-box; width:100%; height:100%;}
+	html, body { margin:0 0 0 0; padding:0 0 0 0; box-sizing:border-box; width:100%; height:100%; background:#1D1464;}
 	ol,li { margin:0; padding:0; box-sizing:border-box; list-style:none;}
-	.container { height:100%; background:#f2f2f2; text-align:center;}
-	main > ol li { position:absolute; top:45%; width:100%; color:#f2f2f2; font-size:0; font-weight:bold;}
-	main > ol li.start_one { animation:CountdownOne 1s 1;}
-	main > ol li.start_two { animation:CountdownTwo 2s 1;}
-	main > ol li.start_three { animation:CountdownThree 3s 1;}
+	.container { height:100%; text-align:center;}
+	div > ol li { position:absolute; top:40%; width:100%; color:#1D1464; font-size:100px; font-weight:bold;}
+	div > ol li.start_one { animation:CountdownOne 2s 1;}
+	div > ol li.start_two { animation:CountdownTwo 6s 1;}
+	div > ol li.start_three { animation:CountdownThree 10s 1;}
 	@keyframes CountdownOne {
-		0% { top:45%; color:#f2f2f2; font-size:0;}
-		33.3% { top:30%; color:#454545; font-size:200px;}
+		0% { color:#fff;}
+		33.3% { display:none;}
 	}
 	@keyframes CountdownTwo {
-		33.3% { top:45%; color:#f2f2f2; font-size:0;}
-		66.6% { top:30%; color:#454545; font-size:200px;}
+		33.3% { color:#fff;}
+		66.6% { display:none;}
 	}
 	@keyframes CountdownThree {
-		66.6% { top:45%; color:#f2f2f2; font-size:0;}
-		99.9% { top:30%; color:#454545; font-size:200px;}
+		66.6% { color:#fff;}
+		99.9% { display:none;}
 	}
 </style>
 </head>
 <body>
 	<div class="wrap">
-		<main role="container" class="container">
+		<div role="container" class="container">
 			<ol>
-				<li class="start_one">1</li>
-				<li class="start_two">2</li>
-				<li class="start_three">3</li>
+			<li class="start_one">안녕하세요.</li>
+			<li class="start_two">김경은입니다.</li>
+			<li class="start_three">감사합니다.</li>
 			</ol>
-		</main>
+		</div>
 	</div>
 </body>
 <script>
-	setTimeout(() => location.href = "./Client/assets/res/www/html/home.html", 3000);
+	// setTimeout(() => location.href = "./Client/assets/res/www/html/home.html", 3000);
 </script>
 </html>
