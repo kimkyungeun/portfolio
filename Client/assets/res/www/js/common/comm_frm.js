@@ -3,18 +3,20 @@
  * <p>comm_frm.js : 공통 프레임</p>
  */
 
- $(function(){
-   $(".mente").typed({
-     strings: [
-       "안녕하세요.",
-       "김경은입니다.",
-       "감사합니다."
-     ],
-     typeSpeed: 50,
-     backDelay: 1500,
-     loop: true
-   });
- });
+
+
+$(function(){
+  $(".mente").typed({
+    strings: [
+      "안녕하세요.",
+      "김경은입니다.",
+      "감사합니다."
+    ],
+    typeSpeed: 50,
+    backDelay: 1500,
+    loop: true
+  });
+});
 
 /*********************************************************
  * <b>FUNCTION</b>
